@@ -2,6 +2,7 @@ import { useState} from "react";
 import axios from "../../data/api/axios";
 import useUserContext from "../../data/context/useUserContext";
 import { Link, useNavigate} from 'react-router-dom';
+import './style.css';
 
 const LOGIN_URL = '/api/User/LogIn';
 
