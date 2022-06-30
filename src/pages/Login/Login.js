@@ -36,7 +36,7 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <div class="loginin">
             <label>Email</label><br />
             <input
                 type='email'
@@ -50,9 +50,9 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
                 required
-            ></input><br /><br />
+            ></input><br/><br/>
             <button onClick={(e) => { handleSubmit(e) }}>Log in</button>
-            <hr/>
+            <hr />
             <p>
                 <label>Need an Account?</label><br/>
                 <span>

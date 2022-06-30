@@ -8,7 +8,7 @@
   font-family: 'Anek Latin', sans-serif;
 }
 
-.loginin {
+.register {
   font-size: 24px;
   background: #24262b;
   display: -ms-grid;
@@ -24,7 +24,7 @@
   padding-bottom: 0.5rem;
 }
 
-.loginin label, .loginin span {
+.register label, .register span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -37,7 +37,7 @@
   color: white;
 }
 
-.loginin input {
+.register input {
   background: transparent;
   width: 100%;
   border: none;
@@ -48,7 +48,7 @@
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
-.loginin button {
+.register button {
   border: none;
   font-weight: bold;
   color: white;
@@ -63,17 +63,17 @@
   font-size: 2rem;
 }
 
-.loginin button:hover {
+.register button:hover {
   background-color: #5ca3ff;
 }
 
-.loginin a {
+.register a {
   color: white;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-.loginin a:hover {
+.register a:hover {
   color: #5ca3ff;
 }
 /*# sourceMappingURL=style.css.map */

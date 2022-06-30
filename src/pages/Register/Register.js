@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "../../data/api/axios";
 import { Link, useNavigate} from 'react-router-dom';
+import './style.css';
 
 const REGISTER_URL = "/api/User/Register"
 
@@ -41,7 +42,7 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div class="register">
             <label>First Name</label><br />
             <input
                 type='text'
