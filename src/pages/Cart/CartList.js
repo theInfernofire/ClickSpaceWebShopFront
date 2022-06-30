@@ -1,8 +1,11 @@
 import CartElement from "./CartElement";
 
-const CartList = (items) => {
-    return items.map((item,index) =>
+const CartList = ({items}) => {
+    return items.map((item =>
     <CartElement
-        key={index}
-    /> )
+        key={item.id}
+        params={item}
+    /> ));
 }
+
+export default CartList;

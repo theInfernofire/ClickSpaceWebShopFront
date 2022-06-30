@@ -1,28 +1,33 @@
 import { useEffect, useState } from "react"
 import useAxiosPrivate from "../../data/api/axiosInterceptors"
+import useUserContext from "../../data/context/useUserContext"
+import CartList from "./CartList"
 const CART_URL = '/GetCartProducts'
 
 
 const Cart = () => {
-    const [cartList, setCartList] = useState('')
+    const {user} = useUserContext();
+    const [cartList, setCartList] = useState({})
     const axiosPrivate = useAxiosPrivate();
 
-    useEffect(() => {
-        const asy = async () => {
-            try {
-                const response = await (await axiosPrivate.get(CART_URL)).data;
-                console.log(response);
-                setCartList(response);
-            } catch (err) {
+    const asy = async () => {
+        try {
+            const response = await (await axiosPrivate.get(CART_URL)).data;
+            setCartList(response);
+        } catch (err) {
 
-            }
         }
+    }
+
+    useEffect(() => {
         asy();
     },)
 
     return (
         <div>
-            mma mia
+            {user.email}
+            {JSON.stringify(cartList)}
+            <CartList items={cartList}/>
         </div>
     )
 }

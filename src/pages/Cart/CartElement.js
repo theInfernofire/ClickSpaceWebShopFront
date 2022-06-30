@@ -1,8 +1,8 @@
 
-const CartElement = (props) => {
+const CartElement = ({params}) => {
     return(
         <div>
-
+            {JSON.stringify(params)}
         </div>
     )
 }
