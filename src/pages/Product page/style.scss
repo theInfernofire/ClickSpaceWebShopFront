@@ -95,10 +95,32 @@ header{
 
         #reglog{
             padding-top: 2rem;
-            margin-bottom: -1.6rem;
+            margin-bottom: -5rem;
+            padding: 1rem;
             // align-items: start;
             // justify-content: start;
             // justify-content: end;
+            #regbutton2{
+                width: 8rem;
+                #regbutton{
+                    color:white;    
+                }
+                #regbutton:hover{
+                    color:#5ca3ff
+                }
+                margin-right: 1rem;
+            }
+            #logbutton2{
+                width: 8rem;
+                
+                #logbutton{
+                    color:white;
+                    width: 8rem;
+                }
+                #logbutton:hover{
+                    color:#5ca3ff
+                }
+            }
         }
     }
 }
@@ -108,18 +130,18 @@ header{
 .product_showcase{
     font-family: 'SamsungOne', sans-serif;
     height: 20rem;
-    border-radius: 8px;
+    border-radius: 12px;
 
     background: rgb(224,225,228);
-    margin:6rem 1rem 10rem 1rem;
+    margin:6rem 6rem 10rem 6rem;
     display: inline-flex;
     // display: inline-flex;
-    #phone{
+    .phone{
         // max-height: 100px;
         // max-height: 100px;
-        width:90%;
+        width:65%;
         margin-top: 1rem;
-        margin-left: 1.3rem;
+        margin-left: 4rem;
         transition: transform 0.2s;
     }
     #phone:hover{
@@ -129,7 +151,7 @@ header{
 
     .sidetext{
         margin-top: 1rem;
-        margin-right: 1rem;
+        margin-right: 5rem;
         #name{
             padding-left: 1rem;
             color: white;
