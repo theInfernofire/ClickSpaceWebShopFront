@@ -2,7 +2,7 @@ import { useNavigate, Outlet } from "react-router-dom";
 import useUserContext from "./data/context/useUserContext";
 
 const RequireAuth = ({ allowedRoles }) => {
-    const { user } = useUserContext();
+    const { user, setUser } = useUserContext();
     const navigate = useNavigate();
 
     return (

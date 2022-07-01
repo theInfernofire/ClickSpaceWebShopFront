@@ -56,10 +56,6 @@ const Register = () => {
 
                 <div id="rightside">
                     <i class="fa-solid fa-basket-shopping" id="basket"></i>
-                    <div id="reglog">
-                        <button onclick="register()" id="regbutton">Register</button>
-                        <button onclick="login()" id="logbutton">Login</button>
-                    </div>
                 </div>
             </header>
 
@@ -105,7 +101,7 @@ const Register = () => {
                 <p>
                     <label>Already have an account?</label>
                     <span>
-                        <Link to="/Login">Sign in</Link>
+                        <Link to="/Login" ><h3>Sign in</h3></Link>
                     </span>
                 </p>
             </div>
