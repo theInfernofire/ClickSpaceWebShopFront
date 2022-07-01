@@ -10,6 +10,7 @@ const Cart = () => {
     const [cartList, setCartList] = useState({})
     const axiosPrivate = useAxiosPrivate();
     const [loading, setLoading] = useState(true);
+    const [cost,setCost] = useState(0);
 
     const asy = async () => {
         try {
@@ -21,6 +22,10 @@ const Cart = () => {
         } catch (err) {
 
         }
+    }
+
+    const add = (n) => {
+        setCost(cost + n);
     }
 
     useEffect(() => {
@@ -62,7 +67,7 @@ const Cart = () => {
 
             <div id="main_cart" >
                 <h1 style={{display:"flex", alignItems: "center", justifyContent:"center"}}>{user.email}'s Cart:</h1><br/>
-                {!loading && cartList.length > 0? <CartList items={cartList} /> : "Nothing in the cart"}
+                {!loading && cartList.length > 0? <CartList items={cartList} add={add} /> : "Nothing in the cart"}
             </div>
 
 
@@ -76,6 +81,8 @@ const Cart = () => {
                 <input type="text" placeholder="Cvc Code" style={{marginLeft:"0.5rem",marginRight:"0.5rem",padding:"0.5rem 0.5rem"}}>
 
                 </input><br></br>
+
+                <h2>${cost}</h2>
 
                 <button onClick="#" style={{marginLeft:"0.5rem",marginRight:"0.5rem",width: "3rem", height: "1.5rem", fontWeight: "bold", color: "white", padding: "2px 7px",
             backgroundColor: "rgb(40, 45, 46)", border: "none", borderRadius: "8px", cursor: "pointer", transition: "all 0.3 ease-in-out 0s"}}>Buy</button>
