@@ -6,14 +6,18 @@ const CART_URL = '/GetCartProducts'
 
 
 const Cart = () => {
-    const {user} = useUserContext();
+    const { user } = useUserContext();
     const [cartList, setCartList] = useState({})
     const axiosPrivate = useAxiosPrivate();
+    const [loading, setLoading] = useState(true);
 
     const asy = async () => {
         try {
             const response = await (await axiosPrivate.get(CART_URL)).data;
             setCartList(response);
+            if (cartList != null) {
+                setLoading(false);
+            }
         } catch (err) {
 
         }
@@ -21,13 +25,12 @@ const Cart = () => {
 
     useEffect(() => {
         asy();
-    },)
+    },[cartList,setCartList])
 
     return (
         <div>
             {user.email}
-            {JSON.stringify(cartList)}
-            <CartList items={cartList}/>
+            {!loading ? <CartList items={cartList} /> : "Nothing in the cart"}
         </div>
     )
 }
