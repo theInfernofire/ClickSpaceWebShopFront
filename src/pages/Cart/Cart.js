@@ -29,8 +29,8 @@ const Cart = () => {
 
     return (
         <div>
-            {user.email}
-            {!loading ? <CartList items={cartList} /> : "Nothing in the cart"}
+            <h1>{user.email}'s Cart:</h1><br/>
+            {!loading && cartList.length > 0? <CartList items={cartList} /> : "Nothing in the cart"}
         </div>
     )
 }

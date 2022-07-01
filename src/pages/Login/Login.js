@@ -36,15 +36,9 @@ const Login = () => {
     }
 
     return (
-
-
-
         <div>
-
-            <header>
-                
+            <header>            
                 <a href="#"><img  src={require('../logo.jpg')} alt="Logo" id="logo"/></a>
-
                 <ul id="categories">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -55,10 +49,6 @@ const Login = () => {
 
                 <div id="rightside">
                     <i class="fa-solid fa-basket-shopping" id="basket"></i>
-                    <div id="reglog">
-                        <button onclick="register()" id="regbutton">Register</button>
-                        <button onclick="login()" id="logbutton">Login</button>
-                    </div>
                 </div>
             </header>
 
@@ -84,7 +74,7 @@ const Login = () => {
                 <p>
                     <label class="account">Need an Account?</label>
                     <span>
-                        <Link to="/register">Sign Up</Link>
+                        <Link to="/register"><h3>Sign up</h3></Link>
                     </span>
                 </p>
             </div>
