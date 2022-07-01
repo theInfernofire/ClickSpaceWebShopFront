@@ -28,7 +28,7 @@ const Login = () => {
             setEmail('');
             setPassword('');
             setUser({ email: email, password: password, roles: ['User'], token: token });
-            navigate("/cart");
+            navigate("/product/user");
         } catch (err) {
             console.log(err);
         }

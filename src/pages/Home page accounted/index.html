@@ -10,7 +10,6 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="https://kit.fontawesome.com/24fdc660a0.js" crossorigin="anonymous"></script>
     <header>
         
         <a href="#"><img src="logo.jpg" alt="Logo" id="logo"></a>
@@ -23,8 +22,6 @@
             <li><a href="#">Showcase</a></li>
             <li><a href="#">Blog</a></li>
         </ul>
-
-        <img src="shopping-cart-20392.png" alt="cart" id="cart">
 
         <div class="rightside">
 
@@ -272,94 +269,33 @@
             <ul class="prodcards">
                 <li value="1" class="threecard">
                     <div class="card">
-                        <h6 id="offer"><center>60% off</center></h6>
+                        <h6 id="offer">60% off</h6>
                         <img src="SM-A536VZK_A53_1.webp" id="photo">
-                        <center id="cardInform">
+                        <div id="cardInform">
                             <h3 id="name">Galaxy A53 5G</h3>
                             <h4 id="deal">258.99$</h4>
                             <button onclick="product1()"id="cardbtn">Buy now</button>
-                        </center>
+                        </div>
                     </div>
                     <div class="card">
-                        <h6 id="offer"><center>30% off</center></h6>
+                        <h6 id="offer">30% off</h6>
                         <img src="FLRC-214-R0-PhantomBlack-01-PDP-GALLERY-1600x1200.webp" id="photo">
-                        <center id="cardInform">
+                        <div id="cardInform">
                             <h3 id="name">Galaxy S22 | S22+</h3>
                             <h4 id="deal">137.99$</h4>
                             <button onclick="product1()" id="cardbtn">Buy now</button>
-                        </center>
+                        </div>
                     </div>
                     <div class="card">
-                        <h6 id="offer"><center>Offer ends june 30</center></h6>
+                        <h6 id="offer">Offer ends june 30</h6>
                         <img src="Gallery-Q2-MainKV_Foldunfold_Black-1600x1200.webp" id="photo">
-                        <center id="cardInform">
+                        <div id="cardInform">
                             <h3 id="name">Galaxy Z Fold3 5G</h3>
                             <h4 id="deal">199.99$</h4>
                             <button onclick="product1()" id="cardbtn">Buy now</button>
-                        </center>
+                        </div>
                     </div>
                 </li>
-<!-- 
-                <li value="2" class="threecard">
-                    <div class="card">
-                        <h6 id="offer">Offer ends june 30</h6>
-                        <img src="images/001.jpg" id="photo">
-                        <center id="cardInform">
-                            <h3 id="name">Galaxy Z Fold3 5G</h3>
-                            <h4 id="deal">198.5$</h4>
-                            <button id="cardbtn">Buy now</button>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <h6 id="offer">Offer ends june 30</h6>
-                        <img src="images/001.jpg" id="photo">
-                        <center id="cardInform">
-                            <h3 id="name">Galaxy Z Fold3 5G</h3>
-                            <h4 id="deal">198.5$</h4>
-                            <button id="cardbtn">Buy now</button>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <h6 id="offer">Offer ends june 30</h6>
-                        <img src="images/001.jpg" id="photo">
-                        <center id="cardInform">
-                            <h3 id="name">Galaxy Z Fold3 5G</h3>
-                            <h4 id="deal">198.5$</h4>
-                            <button id="cardbtn">Buy now</button>
-                        </center>
-                    </div>
-                </li>
-
-                <li value="3" class="threecard">
-                    <div class="card">
-                        <h6 id="offer">Offer ends june 30</h6>
-                        <img src="images/001.jpg" id="photo">
-                        <center id="cardInform">
-                            <h3 id="name">Galaxy Z Fold3 5G</h3>
-                            <h4 id="deal">198.5$</h4>
-                            <button id="cardbtn">Buy now</button>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <h6 id="offer">Offer ends june 30</h6>
-                        <img src="images/001.jpg" id="photo">
-                        <center id="cardInform">
-                            <h3 id="name">Galaxy Z Fold3 5G</h3>
-                            <h4 id="deal">198.5$</h4>
-                            <button id="cardbtn">Buy now</button>
-                        </center>
-                    </div>
-                    <div class="card">
-                        <h6 id="offer">Offer ends june 30</h6>
-                        <img src="images/001.jpg" id="photo">
-                        <center id="cardInform">
-                            <h3 id="name">Galaxy Z Fold3 5G</h3>
-                            <h4 id="deal">198.5$</h4>
-                            <button id="cardbtn">Buy now</button>
-                        </center>
-                    </div>
-                </li> -->
-
             </ul>
 
         </section>
@@ -368,150 +304,163 @@
 
 
     <div class="filteredProduct">
-    <main>
-      <header>
-         <ul class="prd_types">
-            <li data-filter="all" class="active"><a>All</a></li>
-            <li data-filter="Laptop"><a>Laptop</a></li>
-            <li data-filter="Phone"><a>Phone</a></li>
-            <li data-filter="TV"><a>TV</a></li>
-            <li data-filter="Watch"><a>Watch</a></li>
-         </ul>
-         <div class="filter-condition">
-            <span>View As a</span>
-            <select name="" id="select">
-               <option value="Default">Default</option>
-               <option value="LowToHigh">Low to high</option>
-               <option value="HighToLow">High to low</option>
-            </select>
-         </div>
-      </header>
-      <div class="product-field">
-         <ul class="items">
-            <!-- Product 1 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/laptop_1.jpeg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>Laptop</strong>
-               </div>
-               <h4>$45.78</h4>
-            </li>
-
-            <!-- Product 2 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/phone_1.jpg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>Phone</strong>
-               </div>
-               <h4>$35.78</h4>
-            </li>
-            <!-- Product 3 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/TV_1.jpg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>TV</strong>
-               </div>
-               <h4>$40.78</h4>
-            </li>
-            <!-- Product 4 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/smartWatch_1.jpeg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>Watch</strong>
-               </div>
-               <h4>$42.78</h4>
-            </li>
-            <!-- Product 5 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/laptop_2.jpg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>Laptop</strong>
-               </div>
-               <h4>$46.78</h4>
-            </li>
-            <!-- Product 6 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/phone_2.jpg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>Phone</strong>
-               </div>
-               <h4>$55.78</h4>
-            </li>
-            <!-- Product 7 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/TV_2.jpg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>TV</strong>
-               </div>
-               <h4>$25.78</h4>
-            </li>
-            <!-- Product 8 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/smartWatch_2.jpg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>Watch</strong>
-               </div>
-               <h4>$20.78</h4>
-            </li>
-            <!-- Product 9 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/laptop_3.jpeg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>Laptop</strong>
-               </div>
-               <h4>$15.78</h4>
-            </li>
-            <!-- Product 10 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/phone_3.jpg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>Phone</strong>
-               </div>
-               <h4>$22.78</h4>
-            </li>
-            <!-- Product 11 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/TV_3.jpg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>TV</strong>
-               </div>
-               <h4>$33.78</h4>
-            </li>
-            <!-- Product 12 -->
-            <li data-category="" data-price="">
-               <picture>
-                  <img src="images/smartWatch_3.jpg" alt="">
-               </picture>
-               <div class="detail">
-                  <strong>Watch</strong>
-               </div>
-               <h4>$44.78</h4>
-            </li>
-         </ul>
-      </div>
-   </main>
+        <main>
+          <header>
+             <ul class="prd_types">
+                <li data-filter="all" class="active"><a>All</a></li>
+                <li data-filter="Laptop"><a>Laptop</a></li>
+                <li data-filter="Phone"><a>Phone</a></li>
+                <li data-filter="TV"><a>TV</a></li>
+                <li data-filter="Watch"><a>Watch</a></li>
+             </ul>
+             <div class="filter-condition">
+                <span>View As a</span>
+                <select name="" id="select">
+                   <option value="Default">Default</option>
+                   <option value="LowToHigh">Low to high</option>
+                   <option value="HighToLow">High to low</option>
+                </select>
+             </div>
+          </header>
+          <div class="product-field">
+             <ul class="items">
+                <!-- Product 1 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/laptop_1.jpeg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>Laptop</strong>
+                   </div>
+                   <h4>$45.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+    
+                <!-- Product 2 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/phone_1.jpg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>Phone</strong>
+                   </div>
+                   <h4>$35.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+    
+                </li>
+                <!-- Product 3 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/TV_1.jpg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>TV</strong>
+                   </div>
+                   <h4>$40.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+                <!-- Product 4 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/smartWatch_1.jpeg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>Watch</strong>
+                   </div>
+                   <h4>$42.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+                <!-- Product 5 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/laptop_2.jpg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>Laptop</strong>
+                   </div>
+                   <h4>$46.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+                <!-- Product 6 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/phone_2.jpg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>Phone</strong>
+                   </div>
+                   <h4>$55.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+                <!-- Product 7 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/TV_2.jpg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>TV</strong>
+                   </div>
+                   <h4>$25.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+                <!-- Product 8 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/smartWatch_2.jpg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>Watch</strong>
+                   </div>
+                   <h4>$20.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+                <!-- Product 9 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/laptop_3.jpeg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>Laptop</strong>
+                   </div>
+                   <h4>$15.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+                <!-- Product 10 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/phone_3.jpg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>Phone</strong>
+                   </div>
+                   <h4>$22.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+                <!-- Product 11 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/TV_3.jpg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>TV</strong>
+                   </div>
+                   <h4>$33.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+                <!-- Product 12 -->
+                <li data-category="" data-price="">
+                   <picture>
+                      <img src="images/smartWatch_3.jpg" alt="">
+                   </picture>
+                   <div class="detail">
+                      <strong>Watch</strong>
+                   </div>
+                   <h4>$44.78</h4>
+                   <Button id="adtocart">Add to Cart</Button>
+                </li>
+             </ul>
+          </div>
+       </main>
 
 
 

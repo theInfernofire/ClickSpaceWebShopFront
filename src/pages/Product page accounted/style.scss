@@ -65,13 +65,26 @@ header{
     }
 
     
-    .rightside{
+    #rightside{
         display: flex;
         margin-left: 8.5rem;
         margin-right: 0.6rem;
 
+        #logbutton2{
+            width: 8rem;
+            margin-left: 2rem;
+            
+            #logbutton{
+                color:white;
+                width: 8rem;
+            }
+            #logbutton:hover{
+                color:#5ca3ff
+            }
+        }
+
         button {
-            width: 6rem;
+            width: 8rem;
             // margin-top: 5rem;
             height: 2rem;
             font-weight: bold;
@@ -128,6 +141,7 @@ header{
     background: rgb(224,225,228);
     margin:6rem 1rem 10rem 1rem;
     display: inline-flex;
+    // flex-direction: row;
     // display: inline-flex;
     #phone{
         // max-height: 100px;
