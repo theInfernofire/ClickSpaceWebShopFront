@@ -1,0 +1,301 @@
+@import url('http://fonts.cdnfonts.com/css/samsung-sharp-sans');
+@import url('http://fonts.cdnfonts.com/css/samsungone');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    font-family: 'Anek Latin', sans-serif;
+    margin-top: 0.8rem;
+    width: 100%;
+    max-height: 6rem;
+    // justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+
+    a,ul{
+        color: black;
+        text-decoration: none;
+        list-style-type: none;
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 0 1.5rem 0 0.5rem;
+        transition: 0.3s;
+    }
+
+    a:hover{
+        color: #5ca3ff;
+    }
+    
+    
+
+    #logo{
+        justify-content: start;
+        margin-left: 0.6rem;
+        height: 6rem;
+    }
+
+    #cart{
+        margin-left: 4rem;
+        justify-content: end;
+        // margin-left: 0.6rem;
+        height: 3rem;
+        // width: 3rem;
+        cursor: pointer;
+    }
+
+    #categories{
+        display: inline-flex;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 1rem;
+        color: black;
+        li{
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    
+    .rightside{
+        display: flex;
+        margin-left: 8.5rem;
+        margin-right: 0.6rem;
+
+        button {
+            width: 6rem;
+            // margin-top: 5rem;
+            height: 2rem;
+            font-weight: bold;
+            color: white;
+            padding: 2px 9px;
+            background-color: rgb(40, 45, 46);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            // margin-bottom: 3.5rem;
+        } 
+        
+        button:hover {
+            background-color: rgb(54,62,64);
+        } 
+        div{
+            margin-top: 2rem;
+            // margin-bottom: 2rem;
+        }
+
+
+        #logout{
+            margin-left: 2.5rem;
+            margin-top: 0.5rem;
+        }
+        #fullname{
+            // margin-top: rem;
+            margin-left: 2.2rem;
+
+        }
+        #email{
+            margin-top: 0.5rem;
+
+            // margin-top: 7rem;
+
+        }
+        #profilecard{
+            width: 35%;
+            // margin-right: -5rem;
+
+        }
+    }
+}
+
+
+
+
+.product_showcase{
+    font-family: 'SamsungOne', sans-serif;
+    height: 20rem;
+    border-radius: 8px;
+
+    background: rgb(224,225,228);
+    margin:6rem 1rem 10rem 1rem;
+    display: inline-flex;
+    // display: inline-flex;
+    #phone{
+        // max-height: 100px;
+        // max-height: 100px;
+        width:90%;
+        margin-top: 1rem;
+        margin-left: 1.3rem;
+        transition: transform 0.2s;
+    }
+    #phone:hover{
+        transition: 0.2s ease-in;
+        transform: scale(1.07);
+    }
+
+    .sidetext{
+        margin-top: 1rem;
+        margin-right: 1rem;
+        #name{
+            padding-left: 1rem;
+            color: white;
+            border: 1px solid rgb(36,38,43);
+            border-radius: 5px;
+            background: rgb(36,38,43);
+        }
+        #description{
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+
+        }
+        .price{
+            margin-top: 4.5rem;
+            h3{
+                margin-top: 0.7rem;
+                margin-right:0.5rem;
+                float: right;
+            }
+            button {
+                display: flex;
+                float: right;
+                
+                font-weight: bold;
+                color: white;
+                padding: 9px 25px;
+                background-color: rgb(40, 45, 46);
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                
+                width: 30%;
+                height: 3rem;
+                justify-content: center;
+                align-items: center;
+            } 
+            
+            button:hover {
+                background-color: rgb(54,62,64);
+            } 
+        }
+    }
+}
+
+
+
+
+
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    
+
+    .containerer {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .components {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        width: 25%;
+        padding: 0 15px;
+    }
+
+    .column h4 {
+        font-size: 18px;
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        position: relative;
+    }
+
+    .column h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #1ee9ce;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+
+    .components ul {
+        list-style: none;
+    }
+
+    .column ul li {
+        padding: 5px;
+    }
+
+    .column ul li:not(:last-cild) {
+        margin-bottom: 10px;
+    }
+
+    .column ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .column ul li a:hover {
+        color: #fff;
+        padding-left: 8px;
+    }
+
+    .column i {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+
+    .column i:hover {
+        color: #24262b;
+        background-color: #fff;
+    }
+    .Followus{
+        #facebook{
+            width:30%;
+            transition: transform 0.2s;
+            margin-right: 0.5rem;
+
+        }
+        #insta{
+            width:31%;
+            padding-top: 0.1rem;
+            transition: transform 0.2s;
+        }
+        img:hover{
+            transition: 0.2s ease-in;
+            transform: scale(1.07);
+        }
+    }
+}

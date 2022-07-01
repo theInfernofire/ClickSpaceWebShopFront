@@ -1,14 +1,16 @@
+@import url('http://fonts.cdnfonts.com/css/samsung-sharp-sans');
+@import url('http://fonts.cdnfonts.com/css/samsungone');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&display=swap');
 
+
 *{
-    // background: red;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    font-family: 'Anek Latin', sans-serif;
-
 }
+
 
 header{
     font-family: 'Anek Latin', sans-serif;
@@ -32,6 +34,7 @@ header{
     a:hover{
         color: #5ca3ff;
     }
+    
     button {
         font-weight: bold;
         color: white;
@@ -45,13 +48,22 @@ header{
     } 
     
     button:hover {
-        background-color: rgba(43, 66, 71, 0.8)
+        background-color: rgb(54,62,64);
     } 
 
     #logo{
         justify-content: start;
         margin-left: 0.6rem;
         height: 6rem;
+    }
+
+    #cart{
+        margin-left: 4rem;
+        justify-content: end;
+        // margin-left: 0.6rem;
+        height: 3rem;
+        // width: 3rem;
+        cursor: pointer;
     }
 
     #categories{
@@ -69,20 +81,21 @@ header{
     
     #rightside{
         display: inline-flex;
-        position: absolute;
+        margin-left: 18rem;
+        // position: absolute;
         right: 0;
         
         margin-right: 0.6rem;
-        #basket{
-            cursor: pointer;
-            margin-top: 1.4rem;
-            margin-right: 0.8rem;
-            font-size:2.5rem;
-        }
+        // #basket{
+        //     cursor: pointer;
+        //     margin-top: 1.4rem;
+        //     margin-right: 0.8rem;
+        //     font-size:2.5rem;
+        // }
 
         #reglog{
             padding-top: 2rem;
-            margin-bottom: 1rem;
+            margin-bottom: -1.6rem;
             // align-items: start;
             // justify-content: start;
             // justify-content: end;
@@ -92,67 +105,79 @@ header{
 
 
 
+.product_showcase{
+    font-family: 'SamsungOne', sans-serif;
+    height: 20rem;
+    border-radius: 8px;
 
-
-
-.register{
-    font-size: 24px;
-    background: rgb(36,38,43);
-    display:grid;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-
-    label, span{
-        align-items: center;
-        justify-content: center;
-        display:flex;
-        color: white;
-
+    background: rgb(224,225,228);
+    margin:6rem 1rem 10rem 1rem;
+    display: inline-flex;
+    // display: inline-flex;
+    #phone{
+        // max-height: 100px;
+        // max-height: 100px;
+        width:90%;
+        margin-top: 1rem;
+        margin-left: 1.3rem;
+        transition: transform 0.2s;
+    }
+    #phone:hover{
+        transition: 0.2s ease-in;
+        transform: scale(1.07);
     }
 
-    input{
-        color: white;
-        background: transparent;
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid #929da9;
-        outline: none;
-        padding-bottom: 5px;
-        font-size: 15px;
-        padding: 0.5rem 1rem 0.5rem 1rem;
+    .sidetext{
+        margin-top: 1rem;
+        margin-right: 1rem;
+        #name{
+            padding-left: 1rem;
+            color: white;
+            border: 1px solid rgb(36,38,43);
+            border-radius: 5px;
+            background: rgb(36,38,43);
+        }
+        #description{
+            margin-top: 1rem;
+            margin-left: 0.5rem;
 
-    }
-    button {
-        border: none;
-        font-weight: bold;
-        color: white;
-        padding: 9px 25px;
-        background-color: rgba(43, 66, 71, 0.8);
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-        margin-bottom: 0.5rem;
-        font-size: 2rem;
-    } 
-    
-    button:hover {
-        background-color:#37555e; 
-    } 
-
-    
-    a{
-        color: white;
-        transition: all 0.3s ease 0s;
-
-    }
-    a:hover{
-        color: #5ca3ff;
+        }
+        .price{
+            margin-top: 4.5rem;
+            h3{
+                margin-top: 0.7rem;
+                margin-right:0.5rem;
+                float: right;
+            }
+            button {
+                display: flex;
+                float: right;
+                
+                font-weight: bold;
+                color: white;
+                padding: 9px 25px;
+                background-color: rgb(40, 45, 46);
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                
+                width: 30%;
+                height: 3rem;
+                justify-content: center;
+                align-items: center;
+            } 
+            
+            button:hover {
+                background-color: rgb(54,62,64);
+            } 
+        }
     }
 }
+
+
+
+
 
 
 .footer {
