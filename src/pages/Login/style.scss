@@ -261,4 +261,21 @@ header{
         color: #24262b;
         background-color: #fff;
     }
+    .Followus{
+        #facebook{
+            width:30%;
+            transition: transform 0.2s;
+            margin-right: 0.5rem;
+
+        }
+        #insta{
+            width:31%;
+            padding-top: 0.1rem;
+            transition: transform 0.2s;
+        }
+        img:hover{
+            transition: 0.2s ease-in;
+            transform: scale(1.07);
+        }
+    }
 }

@@ -43,7 +43,7 @@ const Login = () => {
 
             <header>
                 
-                <a href="#"><img  src={require('../logo.jpg')} alt="Logo" id="logo"/></a>
+                <a href="#"><img  src={require('../images/logo.jpg')} alt="Logo" id="logo"/></a>
 
                 <ul id="categories">
                     <li><a href="#">Home</a></li>
@@ -90,39 +90,46 @@ const Login = () => {
             </div>
 
             <footer class="footer">
-                <div class="container">
-                <div class="components">
-                    <div class="column">
-                        <h4>About Company</h4>
-                        <ul>
-                            <li><a href="#">about us</a></li>
-                            <li><a href="#">our service</a></li>
-                            <li><a href="#">privecy policy</a></li>
-                            <li><a href="#">Products</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h4>Get Help</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">shipping</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Rrder status</a></li>
-                            <li><a href="#">payment options</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h4>Online Shop</h4>
-                        <ul>
-                            <li><a href="#">Watch</a></li>
-                            <li><a href="#">Phone</a></li>
-                            <li><a href="#">TV</a></li>
-                            <li><a href="#">Leptop</a></li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            </footer>
+        <div class="container">
+           <div class="components">
+              <div class="column">
+                 <h4>About Company</h4>
+                 <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our service</a></li>
+                    <li><a href="#">privecy policy</a></li>
+                    <li><a href="#">Products</a></li>
+                 </ul>
+              </div>
+              <div class="column">
+                 <h4>Get Help</h4>
+                 <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Rrder status</a></li>
+                    <li><a href="#">payment options</a></li>
+                 </ul>
+              </div>
+              <div class="column">
+                 <h4>Online Shop</h4>
+                 <ul>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Leptop</a></li>
+                 </ul>
+              </div>
+              <div class="column">
+                 <h4>Follow Us</h4>
+                 <ul class="Followus">
+                    <a href="#"><img src={require("../images/584ac2d03ac3a570f94a666d.png")} alt="Facebook logo" id="facebook"/></a>
+                    <a href="#"><img src={require("../images/580b57fcd9996e24bc43c521.png")} alt="Instagram logo" id="insta"/></a>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </footer>
         </div>
     )
 }

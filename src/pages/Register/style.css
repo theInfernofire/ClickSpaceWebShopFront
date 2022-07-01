@@ -259,4 +259,29 @@ header #rightside #reglog {
   color: #24262b;
   background-color: #fff;
 }
+
+.footer .Followus #facebook {
+  width: 30%;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  margin-right: 0.5rem;
+}
+
+.footer .Followus #insta {
+  width: 31%;
+  padding-top: 0.1rem;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.footer .Followus img:hover {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
 /*# sourceMappingURL=style.css.map */
