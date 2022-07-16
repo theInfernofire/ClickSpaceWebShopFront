@@ -12,7 +12,7 @@ const PHONE_ID = 7;
 const CART_URL = ""
 
 const Product = () => {
-    const {user} = useUserContext();
+    const { user } = useUserContext();
     const navigate = useNavigate();
 
     const notLoggedIn = () => {
@@ -22,30 +22,30 @@ const Product = () => {
     return (
         <div>
             <header>
-                <a href="#"><img src={logo} alt="Logo" id="logo"/></a>
+                <a href="#"><img src={logo} alt="Logo" id="logo" /></a>
 
 
                 <ul id="categories">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Showcase</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="http://localhost:3000/product">Home</a></li>
+                    <li><a href="http://localhost:3000/aboutus">About</a></li>
+                    <li><a href="http://localhost:3000/unaothorized">Services</a></li>
+                    <li><a href="http://localhost:3000/product">Showcase</a></li>
+                    <li><a href="http://localhost:3000/unaothorized">Blog</a></li>
                 </ul>
-                
-                <img src={shoppingCart} alt="cart" id="cart" onClick={() => {notLoggedIn()}}/>
 
-                    <div id="rightside">
-                        <div id="reglog">
-                            <button id="regbutton2"><Link to="/register" id="regbutton">Register</Link></button>
-                            <button id="logbutton2"><Link to="/register" id="logbutton">Log In</Link></button>
-                        </div>
+                <img src={shoppingCart} alt="cart" id="cart" onClick={() => { notLoggedIn() }} />
+
+                <div id="rightside">
+                    <div id="reglog">
+                        <button id="regbutton2"><Link to="/register" id="regbutton">Register</Link></button>
+                        <button id="logbutton2"><Link to="/register" id="logbutton">Log In</Link></button>
                     </div>
+                </div>
             </header>
 
             <div className="product_showcase">
                 <div class="imagephone">
-                    <img src={product} alt="Logo" className="phone"/>
+                    <img src={product} alt="Logo" className="phone" />
                 </div>
                 <div className="sidetext">
                     <h2 id="name">
@@ -61,7 +61,7 @@ const Product = () => {
                         tenetur error, harum nesciunt ipsum debitis quas aliquid.
                     </p>
                     <div class="price">
-                        <button onClick={() => {notLoggedIn()}}>Add to basket</button>
+                        <button onClick={() => { notLoggedIn() }}>Add to basket</button>
                         <h3>439.99$</h3>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const Product = () => {
 
             </div>
             <div className="fbchat">
-                <ChatBox/>
+                <ChatBox />
             </div>
 
             <footer class="footer">
@@ -89,10 +89,10 @@ const Product = () => {
                             <h4>Get Help</h4>
                             <ul>
                                 <li><a href="#">FAQ</a></li>
-                                <li><a href="#">shipping</a></li>
+                                <li><a href="https://www.freightcenter.com/shipping-companies">shipping</a></li>
                                 <li><a href="#">Returns</a></li>
                                 <li><a href="#">Rrder status</a></li>
-                                <li><a href="#">payment options</a></li>
+                                <li><a href="https://payze.ge/">payment options</a></li>
                             </ul>
                         </div>
                         <div className="column">
@@ -107,8 +107,8 @@ const Product = () => {
                         <div className="column">
                             <h4>Follow Us</h4>
                             <ul class="Followus">
-                                <a href="#"><img src={fb} alt="Facebook logo" id="facebook"/></a>
-                                <a href="#"><img src={ig} alt="Instagram logo" id="insta"/></a>
+                                <a href="#"><img src={fb} alt="Facebook logo" id="facebook" /></a>
+                                <a href="#"><img src={ig} alt="Instagram logo" id="insta" /></a>
                             </ul>
                         </div>
                     </div>

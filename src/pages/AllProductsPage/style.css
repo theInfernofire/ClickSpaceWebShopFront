@@ -1,0 +1,352 @@
+@import url("http://fonts.cdnfonts.com/css/samsung-sharp-sans");
+@import url("http://fonts.cdnfonts.com/css/samsungone");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: 'Anek Latin', sans-serif;
+  margin-top: 0.8rem;
+  width: 100%;
+  height: 6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+header a, header ul {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 1.5rem 0 0.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #5ca3ff;
+}
+
+header button {
+  font-weight: bold;
+  color: white;
+  padding: 9px 25px;
+  background-color: #282d2e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 3.5rem;
+}
+
+header button:hover {
+  background-color: rgba(43, 66, 71, 0.8);
+}
+
+header #logo {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-left: 0.6rem;
+  height: 6rem;
+}
+
+header #categories {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  color: black;
+}
+
+header #categories li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+header #rightside {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+  margin-right: 0.6rem;
+}
+
+header #rightside #basket {
+  cursor: pointer;
+  margin-top: 1.4rem;
+  margin-right: 0.8rem;
+  font-size: 2.5rem;
+}
+
+header #rightside #reglog {
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+.filteredProduct {
+  position: absolute;
+  min-width: 100%;
+  font-family: 'Fredoka', sans-serif;
+  
+}
+
+.filteredProduct header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid #e5e5e5;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filteredProduct header ul {
+  margin-left: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filteredProduct header li {
+  cursor: pointer;
+  list-style: none;
+  display: inline;
+  margin: 0 2rem 0 2rem;
+  min-width: 100%;
+  font-size: 20px;
+  border-radius: 35px;
+}
+
+.filteredProduct header li :hover {
+  color: #0c8d6d;
+}
+
+.filteredProduct header ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.filteredProduct .filter-condition {
+  margin-right: 10%;
+  float: right;
+  font-size: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.filteredProduct .filter-condition span {
+  font-weight: bold;
+}
+
+.filteredProduct .filter-condition select {
+  font-size: 1rem;
+}
+
+.filteredProduct .filter-condition select {
+  padding: 3px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.filteredProduct .product-field {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4%;
+}
+
+.filteredProduct .product-field ul {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filteredProduct .product-field li:hover {
+  color: white;
+  background-color: #1fb19d;
+}
+
+.filteredProduct .product-field li {
+  width: 350px;
+  height: 300px;
+  list-style: none;
+  position: relative;
+  margin: 5px 10px;
+  padding: 10px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.filteredProduct .product-field li picture {
+  max-height: 225px;
+}
+
+.filteredProduct .product-field li picture img {
+  max-height: 225px;
+  width: auto;
+  margin: auto;
+  display: block;
+}
+
+.filteredProduct .product-field li div strong {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.filteredProduct .product-field li h4 {
+  text-align: center;
+}
+.pages {
+  padding: 30px;
+  text-align: center;
+
+}
+.pages a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.pages a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #1fb19d;
+  color: white;
+}
+
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+.footer .containerer {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer .components {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .column {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer .column h4 {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.footer .column h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #1ee9ce;
+  height: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50px;
+}
+
+.footer .components ul {
+  list-style: none;
+}
+
+.footer .column ul li {
+  padding: 5px;
+}
+
+.footer .column ul li:not(:last-cild) {
+  margin-bottom: 10px;
+}
+
+.footer .column ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbb;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer .column ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.footer .column i {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.footer .column i:hover {
+  color: #24262b;
+  background-color: #fff;
+}

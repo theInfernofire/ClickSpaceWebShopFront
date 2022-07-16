@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Products</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/24fdc660a0.js" crossorigin="anonymous"></script>
+    <header>
+        
+        <a href="#"><img src="logo.jpg" alt="Logo" id="logo"></a>
+
+        <ul id="categories">
+            <li><a href="file:///D:/reactProjects/signin_register/src/pages/Homepage/home.html">Home</a></li>
+            <li><a href="http://localhost:3000/aboutus">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="file:///D:/reactProjects/signin_register/src/pages/AllProductsPage/index.html">Showcase</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    
+        <!-- <div class="profile"> -->
+        
+            <!-- <img src="profilecard.jpg" alt="Profile Logo" id="pfp"> -->
+        <!-- </div> -->
+        <div id="rightside">
+            <i class="fa-solid fa-basket-shopping" id="basket"></i>
+            <div id="reglog">
+                <button onclick="register()" id="regbutton">Register</button>
+                <button onclick="login()" id="logbutton">Login</button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="filteredProduct">
+    <main>
+      <header>
+         <ul class="prd_types">
+            <li data-filter="all" class="active"><a>All</a></li>
+            <li data-filter="Laptop"><a>Laptop</a></li>
+            <li data-filter="Phone"><a>Phone</a></li>
+            <li data-filter="TV"><a>TV</a></li>
+            <li data-filter="Watch"><a>Watch</a></li>
+         </ul>
+         <div class="filter-condition">
+            <span>View As a</span>
+            <select name="" id="select">
+               <option value="Default">Default</option>
+               <option value="LowToHigh">Low to high</option>
+               <option value="HighToLow">High to low</option>
+            </select>
+         </div>
+      </header>
+      <div class="product-field">
+         <ul class="items">
+            <!-- Product 1 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/laptop_1.jpeg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Laptop</strong>
+               </div>
+               <h4>$945.99</h4>
+            </li>
+
+            <!-- Product 2 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/smartWatch_4.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Watch</strong>
+               </div>
+               <h4>$999.99</h4>
+            </li>
+            <!-- Product 3 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/TV_1.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>TV</strong>
+               </div>
+               <h4>$109.99</h4>
+            </li>
+            <!-- Product 4 -->
+         </li>
+         <li data-category="" data-price="">
+            <a href="http://localhost:3000/product">
+               <picture>
+                  <img src="images/TV_4.jpg" alt="">
+               </picture>
+            </a>
+            <div class="detail">
+               <strong>TV</strong>
+            </div>
+            <h4>$111.99</h4>
+         </li>  
+            <!-- Product 5 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/smartWatch_1.jpeg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Watch</strong>
+               </div>
+               <h4>$124.99</h4>
+            </li>
+            <!-- Product 6 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/laptop_2.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Laptop</strong>
+               </div>
+               <h4>$435.99</h4>
+            </li>
+            <!-- Product 7 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/smartWatch_5.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Watch</strong>
+               </div>
+               <h4>$845.99</h4>
+            </li>
+            <!-- Product 8 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/phone_6.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Phone</strong>
+               </div>
+               <h4>$855.99</h4>
+            </li>
+            <!-- Product 9 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/TV_2.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>TV</strong>
+               </div>
+               <h4>$799.99</h4>
+            </li>
+            <!-- Product 10 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/smartWatch_2.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Watch</strong>
+               </div>
+               <h4>$500.99</h4>
+            </li>
+            <!-- Product 11 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/phone_1.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Phone</strong>
+               </div>
+               <h4>$835.99</h4>
+            </li>
+            <!-- Product 12 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/laptop_6.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Laptop</strong>
+               </div>
+               <h4>$115.99</h4>
+            </li>  
+            <!-- Product 13 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/phone_5.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Phone</strong>
+               </div>
+               <h4>$775.99</h4>
+            </li>
+             </li>
+            <!-- Product 14 -->
+               <li data-category="" data-price="">
+                  <a href="http://localhost:3000/product">
+                     <picture>
+                        <img src="images/laptop_4.jpg" alt="">
+                     </picture>
+                  </a>
+                <div class="detail">
+                   <strong>Laptop</strong>
+                </div>
+                <h4>$849.99</h4>
+             </li>
+            <!-- Product 15 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/laptop_3.jpeg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Laptop</strong>
+               </div>
+               <h4>$113.99</h4>
+            </li>
+            <!-- Product 16 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/phone_8.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Phone</strong>
+               </div>
+               <h4>$122.99</h4>
+            </li>
+            <!-- Product 17 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/laptop_7.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Laptop</strong>
+               </div>
+               <h4>$815.99</h4>
+            </li>  
+            <!-- Product 18 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/TV_3.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>TV</strong>
+               </div>
+               <h4>$803.99</h4>
+            </li>
+            <!-- Product 19 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/smartWatch_3.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Watch</strong>
+               </div>
+               <h4>444.99</h4>
+           
+            <!-- Product 20 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/laptop_5.jpg" alt="">
+                  </picture>
+               </a>
+                <div class="detail">
+                   <strong>Laptop</strong>
+                </div>
+                <h4>$155.99</h4>
+             </li>    
+              <!-- Product 21 -->
+            <li data-category="" data-price="">
+               <a href="http://localhost:3000/product">
+                  <picture>
+                     <img src="images/phone_9.jpg" alt="">
+                  </picture>
+               </a>
+               <div class="detail">
+                  <strong>Phone</strong>
+               </div>
+               <h4>$745.99</h4>
+            </li>      
+         </ul>
+      </div>
+   </main>
+   <div class ="pages" >
+    <a href="#home" class="previous">&laquo; Previous</a>
+    <a href="#2" class="next">Next &raquo;</a>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+           <div class="components">
+              <div class="column">
+                 <h4>About Company</h4>
+                 <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our service</a></li>
+                    <li><a href="#">privecy policy</a></li>
+                    <li><a href="#">Products</a></li>
+                 </ul>
+              </div>
+              <div class="column">
+                 <h4>Get Help</h4>
+                 <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Rrder status</a></li>
+                    <li><a href="#">payment options</a></li>
+                 </ul>
+              </div>
+              <div class="column">
+                 <h4>Online Shop</h4>
+                 <ul>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Leptop</a></li>
+                 </ul>
+              </div>
+              <div class="column">
+                 <h4>Follow Us</h4>
+                 <ul>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </footer>
+
+
+    </div>
+</body>
+
+
+
+</html>

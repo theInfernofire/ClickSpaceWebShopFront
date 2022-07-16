@@ -3,12 +3,14 @@ import axios from "../../data/api/axios";
 import useUserContext from "../../data/context/useUserContext";
 import { Link, useNavigate} from 'react-router-dom';
 import './style.css';
+import { useCookies } from "react-cookie";
 
 const LOGIN_URL = '/api/User/LogIn';
 
 const Login = () => {
     const { user,setUser } = useUserContext();
     const [userState, setUserState] = useState({});
+    const [cookie, setCookie, removeCookie] = useCookies(['tokensa']);
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -43,16 +45,13 @@ const Login = () => {
                 <a href="#"><img  src={require('../images/logo.jpg')} alt="Logo" id="logo"/></a>
 
                 <ul id="categories">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Showcase</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="http://localhost:3000/product">Home</a></li>
+                    <li><a href="http://localhost:3000/aboutus">About</a></li>
+                    <li><a href="http://localhost:3000/unaothorized">Services</a></li>
+                    <li><a href="http://localhost:3000/unaothorized">Showcase</a></li>
+                    <li><a href="http://localhost:3000/unaothorized">Blog</a></li>
                 </ul>
 
-                <div id="rightside">
-                    <i class="fa-solid fa-basket-shopping" id="basket"></i>
-                </div>
             </header>
 
 
@@ -97,11 +96,11 @@ const Login = () => {
               <div class="column">
                  <h4>Get Help</h4>
                  <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">shipping</a></li>
+                 <li><a href="#">FAQ</a></li>
+                    <li><a href="https://www.freightcenter.com/shipping-companies">shipping</a></li>
                     <li><a href="#">Returns</a></li>
                     <li><a href="#">Rrder status</a></li>
-                    <li><a href="#">payment options</a></li>
+                    <li><a href="https://payze.ge/">payment options</a></li>
                  </ul>
               </div>
               <div class="column">

@@ -15,11 +15,15 @@
     // max-height: 800px;
 
     header{
+        // position: absolute;
+        position: relative;
         font-family: 'Anek Latin', sans-serif;
         margin-top: 0.8rem;
         width: 100%;
         height: 6rem;
-        // justify-content: space-between;
+        margin: auto;
+        min-width: 100%;
+        justify-content: center;
         align-items: center;
         display: inline-flex;
     
@@ -40,7 +44,7 @@
         button {
             font-weight: bold;
             color: white;
-            padding: 9px 25px;
+            padding: 9px 14px;
             background-color: rgb(40, 45, 46);
             border: none;
             border-radius: 8px;
@@ -56,14 +60,17 @@
         #logo{
             justify-content: start;
             margin-left: 0.6rem;
-            height: 6rem;
+            min-height: 2rem;
+            max-height: 6rem;
         }
 
         #cart{
-            margin-left: 4rem;
-            justify-content: end;
+            // margin-left: 4rem;
+            // justify-content: end;
             // margin-left: 0.6rem;
-            height: 3rem;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            height: 4rem;
             // width: 3rem;
             cursor: pointer;
         }
@@ -85,7 +92,7 @@
             display: inline-flex;
             margin-left: 18rem;
             // position: absolute;
-            right: 0;
+            // right: 0;
             
             margin-right: 0.6rem;
             // #basket{
@@ -101,34 +108,30 @@
                 // align-items: start;
                 // justify-content: start;
                 // justify-content: end;
-                #regbutton2{
-                    width: 8rem;
-                    #regbutton{
-                        color:white;    
-                    }
-                    #regbutton:hover{
-                        color:#5ca3ff
-                    }
-                    margin-right: 1rem;
-                }
-                #logbutton2{
-                    width: 8rem;
-                    
-                    #logbutton{
-                        color:white;
-                        width: 8rem;
-                    }
-                    #logbutton:hover{
-                        color:#5ca3ff
-                    }
-                }
             }
         }
     }
+
+    
 .productSlideshow{
     font-family: 'SamsungOne', sans-serif;
-    position: absolute;
-    top: 9rem;
+    // position: absolute;
+    // top: 9rem;
+    // margin-left: 50rem;
+    // justify-content: center;
+    // align-items: center;
+    margin: 0;
+
+    // min-width: 100%;
+    min-width: 1440px;
+    max-width: 2000px;
+
+
+    // margin: auto;
+    padding: 4rem 10rem 4rem 10rem;
+    // .slideshowbody{
+
+    // }
 
     .slideshow-container {
         max-width: 100%;
@@ -209,7 +212,7 @@
         height: 3px;
         background: black;
         display: block;
-        margin: auto;
+        // margin: auto;
         transition: 0.5s;
      }
      
@@ -360,13 +363,13 @@
 
 
 
-
 .productslider{
     font-family: 'SamsungOne', sans-serif;
-    position: absolute;
-    top: 45rem;
-    height: 46rem;
+    // position: absolute;
+    // top: 45rem;
+    // height: 36rem;
     overflow: hidden;
+    // padding-bottom: 50rem;
 
     .toptext{
         display: flex;
@@ -444,7 +447,7 @@
         display: flex;
         flex-direction: row;
         overflow: hidden;
-        width: 300%;
+        width: 100%;
 
         //MAIN CARD WIDTH
     }
@@ -458,8 +461,8 @@
     
     
     .card {
-        width: 12%;
-        height: 30rem;
+        width: 33%;
+        height: 33rem;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -468,7 +471,7 @@
         cursor:pointer;
         border-radius: 8px;
         margin: 4px;
-        background: rgb(224, 225, 228);
+        background: rgb(247, 247, 247);
         padding-bottom: 1rem;
         
         button {
@@ -503,9 +506,9 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 3rem;
-        margin-top: -8rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        margin-top: -6rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
         
         // width: 30%;
 
@@ -573,7 +576,7 @@
 
 .filteredProduct{
 
-    position: absolute;
+    // position: absolute;
     top: 90rem;
     min-width: 100%;
 

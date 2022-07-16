@@ -7,6 +7,19 @@ linez.forEach(linez => {
 	})
 })
 
+
+function register(){
+   location.href = "http://localhost:3000/register"
+}
+
+function login(){
+   location.href = "http://localhost:3000/login"
+}
+
+function productpage(){
+   location.href = "http://localhost:3000/product"
+}
+
 // var currentslideNumb = 1;
 
 // function moving(slideNumb){

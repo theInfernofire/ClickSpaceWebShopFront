@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Login from './pages/Login/Login';
-import Register from './pages/Register/Register';
-import Cart from './pages/Cart/Cart';
-import UserContext, { UserProvider } from './data/context/userContext';
+import { UserProvider } from './data/context/userContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 

@@ -7,40 +7,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <title>Document</title>
+    <title>Home</title>
 </head>
-<body>
+<body class="omega">
     <header>
         
-        <a href="#"><img src="logo.jpg" alt="Logo" id="logo"></a>
+        <a href="home.html"><img src="Samsung-Symbol.png" alt="Logo" id="logo"></a>
         
 
         <ul id="categories">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="file:///D:/reactProjects/signin_register/src/pages/Homepage/home.html">Home</a></li>
+            <li><a href="http://localhost:3000/aboutus">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Showcase</a></li>
+            <li><a href="file:///D:/reactProjects/signin_register/src/pages/AllProductsPage/index.html">Showcase</a></li>
             <li><a href="#">Blog</a></li>
         </ul>
 
+        
+
         <div id="rightside">
             <div id="reglog">
-                <button onclick="register()" id="regbutton2"><a id="regbutton" href="http://localhost:3000/register">register</a></button>
-                <button onclick="login()" id="logbutton2"><a id="logbutton"href="http://localhost:3000/login">login</a></button>
+                <button onclick="register()" id="regbutton">Register</button>
+                <button onclick="login()" id="logbutton">Login</button>
             </div>
         </div>
     </header>
 
 
     <div class="productSlideshow">
-
-
-        <body>
+        <body class="slideshowbody">
             <div class="slideshow-container">
     
                 <!-- Slide 1 -->
                 <div class="mySlides fade"> 
-                    <!-- <div class="numbertext"> 1 / 6 </div> -->                    <img src="images/001.jpg" style="width:100%">
+                    <!-- <div class="numbertext"> 1 / 6 </div> -->                    
+                    <img src="images/001.jpg" style="width:100%">
                     <div class="slide_text">
                         <h1 class="head">
                             8 creators. 1 shot at<br>
@@ -270,7 +271,7 @@
                         <div id="cardInform">
                             <h3 id="name">Galaxy A53 5G</h3>
                             <h4 id="deal">258.99$</h4>
-                            <button onclick="product1()"id="cardbtn">Buy now</button>
+                            <button onclick="productpage()"id="cardbtn">Buy now</button>
                         </div>
                     </div>
                     <div class="card">
@@ -280,7 +281,7 @@
                             <h3 id="name">Galaxy S22 | S22+</h3>
                             <div id="dealandbutton">
                                 <h4 id="deal">137.99$</h4>
-                                <button onclick="product1()" id="cardbtn">Buy now</button>
+                                <button onclick="productpage()" id="cardbtn">Buy now</button>
                              </div>
                         </div>
                     </div>
@@ -290,7 +291,7 @@
                         <div id="cardInform">
                             <h3 id="name">Galaxy Z Fold3 5G</h3>
                             <h4 id="deal">199.99$</h4>
-                            <button onclick="product1()" id="cardbtn">Buy now</button>
+                            <button onclick="productpage()" id="cardbtn">Buy now</button>
                         </div>
                     </div>
                 </li>
@@ -331,7 +332,7 @@
                         <strong>Laptop</strong>
                      </div>
                      <h4>$45.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
                   </li>
       
                   <!-- Product 2 -->
@@ -343,7 +344,7 @@
                         <strong>Phone</strong>
                      </div>
                      <h4>$35.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
       
                   </li>
                   <!-- Product 3 -->
@@ -355,7 +356,7 @@
                         <strong>TV</strong>
                      </div>
                      <h4>$40.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
                   </li>
                   <!-- Product 4 -->
                   <li data-category="" data-price="">
@@ -366,7 +367,7 @@
                         <strong>Watch</strong>
                      </div>
                      <h4>$42.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
                   </li>
                   <!-- Product 5 -->
                   <li data-category="" data-price="">
@@ -377,7 +378,7 @@
                         <strong>Laptop</strong>
                      </div>
                      <h4>$46.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
                   </li>
                   <!-- Product 6 -->
                   <li data-category="" data-price="">
@@ -388,7 +389,7 @@
                         <strong>Phone</strong>
                      </div>
                      <h4>$55.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
                   </li>
                   <!-- Product 7 -->
                   <li data-category="" data-price="">
@@ -399,7 +400,7 @@
                         <strong>TV</strong>
                      </div>
                      <h4>$25.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
                   </li>
                   <!-- Product 8 -->
                   <li data-category="" data-price="">
@@ -410,8 +411,8 @@
                         <strong>Watch</strong>
                      </div>
                      <h4>$20.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
-                  </li>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
+                    </li>
                   <!-- Product 9 -->
                   <li data-category="" data-price="">
                      <picture>
@@ -421,7 +422,7 @@
                         <strong>Laptop</strong>
                      </div>
                      <h4>$15.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
                   </li>
                   <!-- Product 10 -->
                   <li data-category="" data-price="">
@@ -432,7 +433,7 @@
                         <strong>Phone</strong>
                      </div>
                      <h4>$22.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
                   </li>
                   <!-- Product 11 -->
                   <li data-category="" data-price="">
@@ -443,7 +444,7 @@
                         <strong>TV</strong>
                      </div>
                      <h4>$33.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
                   </li>
                   <!-- Product 12 -->
                   <li data-category="" data-price="">
@@ -454,7 +455,7 @@
                         <strong>Watch</strong>
                      </div>
                      <h4>$44.78</h4>
-                     <Button id="adtocart">Add to Cart</Button>
+                     <Button onclick="productpage()" id="adtocart">Add to Cart</Button>
                   </li>
                </ul>
             </div>
@@ -465,7 +466,7 @@
     <div class="container">
       <div class="contact_box">
          <div class="left_part">
-            <h2>Contact Me</h2>
+            <h2>Contact Us</h2>
             <form>
                <div class="input_row">
                      <div class="input_components">
@@ -500,7 +501,7 @@
          </div>
 
          <div class="right_part">
-            <h2>Reached Us</h2>
+            <h2>Reach Us</h2>
             <table>
                <tr>
                      <td>Email:</td>
@@ -540,17 +541,17 @@
                     <li><a href="#">about us</a></li>
                     <li><a href="#">our service</a></li>
                     <li><a href="#">privecy policy</a></li>
-                    <li><a href="#">Products</a></li>
+                    <li><a href="http://localhost:3000/product">Products</a></li>
                  </ul>
               </div>
               <div class="column">
                  <h4>Get Help</h4>
                  <ul>
                     <li><a href="#">FAQ</a></li>
-                    <li><a href="#">shipping</a></li>
+                    <li><a href="https://www.freightcenter.com/shipping-companies">shipping</a></li>
                     <li><a href="#">Returns</a></li>
                     <li><a href="#">Rrder status</a></li>
-                    <li><a href="#">payment options</a></li>
+                    <li><a href="https://payze.ge/">payment options</a></li>
                  </ul>
               </div>
               <div class="column">

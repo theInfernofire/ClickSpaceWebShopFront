@@ -1,0 +1,584 @@
+import './style.css';
+
+
+
+
+const Homepage = () => {
+
+    return (
+        <div>
+            <body class="omega">
+                <header>
+
+                    <a href="home.html"><img src="Samsung-Symbol.png" alt="Logo" id="logo" /></a>
+
+
+                    <ul id="categories">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Showcase</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+
+
+
+                    <div id="rightside">
+                        <img src="shopping-cart-20392.png" alt="cart" id="cart" />
+                        <div id="reglog">
+                            <button onclick="register()" id="regbutton">Register</button>
+                            <button onclick="login()" id="logbutton">Login</button>
+                        </div>
+                    </div>
+                </header>
+
+
+                <div class="productSlideshow">
+                    <body class="slideshowbody">
+                        <div class="slideshow-container">
+
+                            {/* <!-- Slide 1 --> */}
+                            <div class="mySlides fade">
+                                {/* <!-- <div class="numbertext"> 1 / 6 </div> -->                     */}
+                                <img src="images/001.jpg" style="width:100%" />
+                                <div class="slide_text">
+                                    <h1 class="head">
+                                        8 creators. 1 shot at<br></br>
+                                        ultimate exposure.
+                                    </h1>
+                                    <p class="text">
+                                        Exposure is back and more epic than ever as eight incredible creators<br></br>
+                                        compete for a career-changing $250,000 prize.<br></br>
+                                        Now $74.99 <s>$1,199.99</s> with eligible trade-in.<sup>θ</sup>
+                                    </p>
+                                    <div class="slide_links">
+                                        <a class="link_style_1" href="#"><b>Learn more</b></a>
+                                        <a class="link_style_2" href="#"><b>Buy now</b></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* <!-- Slide 2 --> */}
+                            <div class="mySlides fade">
+                                {/* <!-- <div class="numbertext">2 / 6</div> --> */}
+                                <img src="images/002.jpg" style="width:100%" />
+                                <div class="slide_text">
+                                    <h1 class="head">
+                                        Open up a world of<br></br>
+                                        possibilities
+                                    </h1>
+                                    <p class="text">
+                                        Get a free, select Book Cover (up to a $79.99 value) with Galaxy Tab S7 FE.<sup>♯</sup><br></br>
+                                        From $529.99<s>$609.98</s>.
+                                    </p>
+                                    <div class="slide_links">
+                                        <a class="link_style_1" href="#"><b>Learn more</b></a>
+                                        <a class="link_style_2" href="#"><b>Buy now</b></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* <!-- Slide 3 --> */}
+                            <div class="mySlides fade" style="color: white;">
+                                {/* <!-- <div class="numbertext" style="color: white;">3 / 6</div> --> */}
+                                <img src="images/003.jpg" style="width:100%" />
+
+                                <div class="slide_text" style="color: white;">
+                                    <h1 class="head">Take it to the next level</h1>
+                                    <p class="text">
+                                        Reserve the Samsung Odyssey Neo G8 now to save $50.<sup>Ж</sup>
+                                    </p>
+                                    {/* <!-- Clock --> */}
+                                    <div class="clock">
+                                        <div class="clock_atributes">
+                                            <div class="clock_type" id="days">00</div>
+                                            <div class="clock_type_name">DAY</div>
+                                        </div>
+
+                                        <div class="clock_separator">:</div>
+
+                                        <div class="clock_atributes">
+                                            <div class="clock_type" id="hours">00</div>
+                                            <div class="clock_type_name">HOURS</div>
+                                        </div>
+
+                                        <div class="clock_separator">:</div>
+
+                                        <div class="clock_atributes">
+                                            <div class="clock_type" id="minutes">00</div>
+                                            <div class="clock_type_name">MINUTES</div>
+                                        </div>
+
+                                        <div class="clock_separator">:</div>
+
+                                        <div class="clock_atributes">
+                                            <div class="clock_type" id="seconds">00</div>
+                                            <div class="clock_type_name">SECONDS</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slide_links">
+                                        <a class="link_style_2" href="#" style="color: black; background: white;"><b>Reserve now</b></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* <!-- Slide 4 --> */}
+                            <div class="mySlides fade">
+                                {/* <!-- <div class="numbertext">4 / 6</div> --> */}
+                                <img src="images/004.jpg" style="width:100%" />
+                                <div class="slide_text">
+                                    <h1 class="head">
+                                        Carry The Freestyle anywhere
+                                    </h1>
+                                    <p class="text">
+                                        Now you can tote The Freestyle wherever life takes you. Buy The Freestyle
+                                        today and get the weather-resistant carrying case, on us.
+                                    </p>
+                                    <div class="slide_links">
+                                        <a class="link_style_2" href="#"><b>Buy now</b></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* <!-- Slide 5 --> */}
+                            <div class="mySlides fade">
+                                {/* <!-- <div class="numbertext">5 / 6</div> --> */}
+                                <img src="images/005.jpg" style="width:100%" />
+                                <div class="slide_text">
+                                    <h1 class="head">
+                                        Buy together and get rewarded
+                                    </h1>
+                                    <p class="text">
+                                        Get up to $1,300 off select Bespoke Refrigerators now and earn up to $200 cash back.
+                                        <sup>⋈</sup>
+                                    </p>
+                                    <div class="slide_links">
+                                        <a class="link_style_1" href="#"><b>Learn more</b></a>
+                                        <a class="link_style_2" href="#"><b>Buy now</b></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* <!-- Slide 6 --> */}
+                            <div class="mySlides fade">
+                                {/* <!-- <div class="numbertext">6 / 6</div> --> */}
+                                <img src="images/006.jpg" style="width:100%" />
+                                <div class="slide_text">
+                                    <h4>May 19 - June 8</h4>
+                                    <h1 class="head">
+                                        Memorial Day Sales Event
+                                    </h1>
+                                    <p class="text">
+                                        Shop offers on appliances, TVs, smartphones and more.
+                                    </p>
+                                    <div class="slide_links">
+                                        <a class="link_style_1" href="#"><b>Shop appliances</b></a>
+                                        <a class="link_style_2" href="#"><b>Shop all offers</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <!-- Previous/Next buttons --> */}
+                            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br></br>
+                        {/* <!-- Moving buttons --> */}
+                        <div class="move_lines">
+                            <button class="line" onclick="currentSlide(1)">
+                                <span class="line_atributes">
+                                    <div class="name"><b>Galaxy S22 Ultra</b></div>
+                                    <div class="line_design" id="b1"></div>
+                                </span>
+                            </button>
+
+                            <button class="line" onclick="currentSlide(2)">
+                                <span class="line_atributes">
+                                    <div class="name"><b>Galaxy Tab S7 FE</b></div>
+                                    <div class="line_design" id="b2"></div>
+                                </span>
+                            </button>
+
+                            <button class="line" onclick="currentSlide(3)">
+                                <span class="line_atributes">
+                                    <div class="name"><b>Odyssey Neo G8</b></div>
+                                    <div class="line_design" id="b3"></div>
+                                </span>
+                            </button>
+
+                            <button class="line" onclick="currentSlide(4)">
+                                <span class="line_atributes">
+                                    <div class="name"><b>The Freestyle</b></div>
+                                    <div class="line_design" id="b4"></div>
+                                </span>
+                            </button>
+
+                            <button class="line" onclick="currentSlide(5)">
+                                <span class="line_atributes">
+                                    <div class="name"><b>Bespoke Rewards</b></div>
+                                    <div class="line_design" id="b5"></div>
+                                </span>
+                            </button>
+
+                            <button class="line" onclick="currentSlide(6)">
+                                <span class="line_atributes">
+                                    <div class="name"><b>Memorial Day</b></div>
+                                    <div class="line_design" id="b6"></div>
+                                </span>
+                            </button>
+                            {/* <!-- Auto Moving button --> */}
+                            <button class="auto_mover" id="autobutton" onclick="autobuttonAnimation(), autoMove()"><i class="fa-solid fa-pause"></i></button>
+                        </div>
+                    </body>
+
+                </div>
+
+                <div class="productslider">
+                    <section class="container">
+                        <div class="toptext">
+                            <h1>Shop our latest offers and innovations</h1>
+                        </div>
+                        <div class="slide-text">
+                            <div class="slide-buttons">
+                                <button onclick="moving(1)" class="active" >For you</button>
+                            </div>
+                            <div class="slide-buttons" >
+                                <button onclick="moving(2)">Smartphones & Wearables</button>
+                            </div>
+                            <div class="slide-buttons">
+                                <button onclick="moving(3)">TVs</button>
+                            </div>
+                            <div class="slide-buttons">
+                                <button onclick="moving(4)">Home Appliances</button>
+                            </div>
+                            <div class="slide-buttons">
+                                <button onclick="moving(5)">Tablets & Computing</button>
+                            </div>
+                            <div class="slide-buttons">
+                                <button onclick="moving(6)">For Business</button>
+                            </div>
+                        </div>
+
+                        <ul class="prodcards">
+                            <li value="1" class="threecard">
+                                <div class="card">
+                                    <h6 id="offer">60% off</h6>
+                                    <img src="SM-A536VZK_A53_1.webp" id="photo" />
+                                    <div id="cardInform">
+                                        <h3 id="name">Galaxy A53 5G</h3>
+                                        <h4 id="deal">258.99$</h4>
+                                        <button onclick="product1()" id="cardbtn">Buy now</button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h6 id="offer">30% off</h6>
+                                    <img src="FLRC-214-R0-PhantomBlack-01-PDP-GALLERY-1600x1200.webp" id="photo" />
+                                    <div id="cardInform">
+                                        <h3 id="name">Galaxy S22 | S22+</h3>
+                                        <div id="dealandbutton">
+                                            <h4 id="deal">137.99$</h4>
+                                            <button onclick="product1()" id="cardbtn">Buy now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h6 id="offer">Offer ends june 30</h6>
+                                    <img src="Gallery-Q2-MainKV_Foldunfold_Black-1600x1200.webp" id="photo" />
+                                    <div id="cardInform">
+                                        <h3 id="name">Galaxy Z Fold3 5G</h3>
+                                        <h4 id="deal">199.99$</h4>
+                                        <button onclick="product1()" id="cardbtn">Buy now</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </section>
+
+                </div>
+
+
+                <div class="filteredProduct">
+                    <main>
+                        <header>
+                            <ul class="prd_types">
+                                <li data-filter="all" class="active"><a>All</a></li>
+                                <li data-filter="Laptop"><a>Laptop</a></li>
+                                <li data-filter="Phone"><a>Phone</a></li>
+                                <li data-filter="TV"><a>TV</a></li>
+                                <li data-filter="Watch"><a>Watch</a></li>
+                            </ul>
+                            <div class="filter-condition">
+                                <span>View As a</span>
+                                <select name="" id="select">
+                                    <option value="Default">Default</option>
+                                    <option value="LowToHigh">Low to high</option>
+                                    <option value="HighToLow">High to low</option>
+                                </select>
+                            </div>
+                        </header>
+                        <div class="product-field">
+                            <ul class="items">
+                                {/* <!-- Product 1 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/laptop_1.jpeg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>Laptop</strong>
+                                    </div>
+                                    <h4>$45.78</h4>
+                                    <button onclick="showcasepage()" id="adtocart">Add to Cart</button>
+                                </li>
+
+                                {/* <!-- Product 2 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/phone_1.jpg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>Phone</strong>
+                                    </div>
+                                    <h4>$35.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+
+                                </li>
+                                {/* <!-- Product 3 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/TV_1.jpg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>TV</strong>
+                                    </div>
+                                    <h4>$40.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+                                </li>
+                                {/* <!-- Product 4 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/smartWatch_1.jpeg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>Watch</strong>
+                                    </div>
+                                    <h4>$42.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+                                </li>
+                                {/* <!-- Product 5 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/laptop_2.jpg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>Laptop</strong>
+                                    </div>
+                                    <h4>$46.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+                                </li>
+                                {/* <!-- Product 6 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/phone_2.jpg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>Phone</strong>
+                                    </div>
+                                    <h4>$55.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+                                </li>
+                                {/* <!-- Product 7 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/TV_2.jpg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>TV</strong>
+                                    </div>
+                                    <h4>$25.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+                                </li>
+                                {/* <!-- Product 8 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/smartWatch_2.jpg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>Watch</strong>
+                                    </div>
+                                    <h4>$20.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+                                </li>
+                                {/* <!-- Product 9 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/laptop_3.jpeg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>Laptop</strong>
+                                    </div>
+                                    <h4>$15.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+                                </li>
+                                {/* <!-- Product 10 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/phone_3.jpg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>Phone</strong>
+                                    </div>
+                                    <h4>$22.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+                                </li>
+                                {/* <!-- Product 11 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/TV_3.jpg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>TV</strong>
+                                    </div>
+                                    <h4>$33.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+                                </li>
+                                {/* <!-- Product 12 --> */}
+                                <li data-category="" data-price="">
+                                    <picture>
+                                        <img src="images/smartWatch_3.jpg" alt="" />
+                                    </picture>
+                                    <div class="detail">
+                                        <strong>Watch</strong>
+                                    </div>
+                                    <h4>$44.78</h4>
+                                    <button id="adtocart">Add to Cart</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </main>
+
+
+
+                    <div class="container">
+                        <div class="contact_box">
+                            <div class="left_part">
+                                <h2>Contact Me</h2>
+                                <form>
+                                    <div class="input_row">
+                                        <div class="input_components">
+                                            <label>Name</label>
+                                            <input type="text" placeholder="Name"></input>
+                                        </div>
+
+                                        <div class="input_components">
+                                            <label>Phone</label>
+                                            <input type="text" placeholder="Phone"></input>
+                                        </div>
+                                    </div>
+
+                                    <div class="input_row">
+                                        <div class="input_components">
+                                            <label>Email</label>
+                                            <input type="text" placeholder="Email"></input>
+                                        </div>
+
+                                        <div class="input_components">
+                                            <label>Problem Type</label>
+                                            <input type="text" placeholder="Problem Type"></input>
+                                        </div>
+                                    </div>
+
+                                    <label>Message</label>
+                                    <textarea id="textarea_1" rows="5" placeholder="Message" maxlength="1000"></textarea>
+                                    <p class="textarea_limit" id="textarea_limit_id">0/1000</p>
+
+                                    <button type="submit">Send</button>
+                                </form>
+                            </div>
+
+                            <div class="right_part">
+                                <h2>Reached Us</h2>
+                                <table>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td><a href="#">Test.Tester@gmail.com</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone:</td>
+                                        <td>(+995) 555 123 456</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address:</td>
+                                        <td>221B, Baker Street</td>
+                                    </tr>
+                                </table><br></br><br></br><br></br>
+                                <div class="news_mode">
+                                    <h3>News Mode</h3><br></br>
+                                    <p>If you do not want to miss the news, then fill in the box below:</p><br></br>
+                                    <input type="text" placeholder="Email"></input>
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="components">
+                                <div class="column">
+                                    <h4>About Company</h4>
+                                    <ul>
+                                        <li><a href="#">about us</a></li>
+                                        <li><a href="#">our service</a></li>
+                                        <li><a href="#">privecy policy</a></li>
+                                        <li><a href="#">Products</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column">
+                                    <h4>Get Help</h4>
+                                    <ul>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">shipping</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                        <li><a href="#">Rrder status</a></li>
+                                        <li><a href="#">payment options</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column">
+                                    <h4>Online Shop</h4>
+                                    <ul>
+                                        <li><a href="#">Watch</a></li>
+                                        <li><a href="#">Phone</a></li>
+                                        <li><a href="#">TV</a></li>
+                                        <li><a href="#">Leptop</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column">
+                                    <h4>Follow Us</h4>
+                                    <ul class="Followus">
+                                        <a href="#"><img src="584ac2d03ac3a570f94a666d.png" alt="Facebook logo" id="facebook" /></a>
+                                        <a href="#"><img src="580b57fcd9996e24bc43c521.png" alt="Instagram logo" id="insta" /></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+
+                </div>
+            </body>
+
+        </div>
+    );
+}
+
+export default Homepage;

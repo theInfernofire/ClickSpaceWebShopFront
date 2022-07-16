@@ -1,0 +1,58 @@
+.about3 {
+    margin-top: -200px;
+    height: 800px;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about3 img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+
+.about3 .all_text {
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.main3 {
+    width: 2000px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about3 .all_text h4 {
+    font-family: 'SamsungOne', sans-serif;
+    font-size: 20px;
+    color: #777;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.about3 .all_text h1 {
+    font-size: 40px;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.about3 .all_text ul li {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 17px;
+    color: #777;
+    line-height: 30px;
+    margin-bottom: 25px;
+    list-style-type: none;
+}

@@ -40,10 +40,10 @@ const Cart = () => {
                 
 
                 <ul id="categories">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="http://localhost:3000/product">Home</a></li>
+                    <li><a href="http://localhost:3000/aboutus">About</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Showcase</a></li>
+                    <li><a href="http://localhost:3000/product/user">Showcase</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
 
@@ -67,11 +67,11 @@ const Cart = () => {
 
             <div id="main_cart" >
                 <h1 style={{display:"flex", alignItems: "center", justifyContent:"center"}}>{user.email}'s Cart:</h1><br/>
-                {!loading && cartList.length > 0? <CartList items={cartList} add={add} /> : "Nothing in the cart"}
+                {!loading && cartList.length > 0? <CartList items={cartList} add={add} /> : ""}
             </div>
 
 
-            <div style={{display:"flex", alignItems: "center", justifyContent:"center",marginTop:"3rem",marginBottom:"6rem",marginLeft:"35rem",marginRight:"35rem",border:"solid 1px",padding:"1.5rem 1rem"}}>  
+            <div style={{display:"flex", alignItems: "center", justifyContent:"center",marginTop:"3rem",marginBottom:"6rem",marginLeft:"25rem",marginRight:"25rem",border:"solid 1px",padding:"1.5rem 1rem"}}>  
 
                 <input type="text" placeholder="card Number" style={{marginLeft:"0.5rem",marginRight:"0.5rem",padding:"0.5rem 0.5rem"}}></input>
 
